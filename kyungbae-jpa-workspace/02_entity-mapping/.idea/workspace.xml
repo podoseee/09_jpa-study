@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a1888d35-ce8b-43db-ab5b-0539f3725095" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../01_persistence-context/jpa.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_persistence-context/src/main/java/com/kyungbae/entity/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_persistence-context/src/main/java/com/kyungbae/section01/EntityManagerLifeCycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_persistence-context/src/main/java/com/kyungbae/section02/EntityManagerCRUD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_persistence-context/src/main/java/com/kyungbae/section03/EntityLifeCycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_persistence-context/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_persistence-context/src/test/java/com/kyungbae/entity/MenuTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_persistence-context/src/test/java/com/kyungbae/section01/EntityManagerLifeCycleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_persistence-context/src/test/java/com/kyungbae/section02/EntityManagerCRUDTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_persistence-context/src/test/java/com/kyungbae/section03/EntityLifeCycleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_persistence-context/src/test/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kyungbae/section01/EntityAutoDDLTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kyungbae/section01/test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kyungbae/section01/test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kyungbae/section01/test3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kyungbae/section02/EntityColumnMappingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kyungbae/section02/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/META-INF/persistence.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "kakaba-hub"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/kakaba-hub/09_jpa-study.git",
+    "accountId": "ba4866cb-1990-4928-a47e-4974ab4d58cb"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2y226gd04LQNuuNudxUGQWRQ1bN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.EntityAutoDDLTest.테이블자동생성테스트.executor": "Run",
+    "Gradle.EntityColumnMappingTest.컬럼매핑테스트.executor": "Run",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/dev/workspaces/09_jpa-study/kyungbae-jpa-workspace/02_entity-mapping/src/test/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\workspaces\09_jpa-study\kyungbae-jpa-workspace\02_entity-mapping\src\test\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\workspaces\09_jpa-study\kyungbae-jpa-workspace\02_entity-mapping\src\test\resources" />
+      <recent name="C:\dev\workspaces\09_jpa-study\kyungbae-jpa-workspace\02_entity-mapping\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.kyungbae.section01" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.EntityColumnMappingTest.컬럼매핑테스트">
+    <configuration name="EntityAutoDDLTest.테이블자동생성테스트" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.kyungbae.section01.EntityAutoDDLTest.테이블자동생성테스트&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="EntityColumnMappingTest.컬럼매핑테스트" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.kyungbae.section02.EntityColumnMappingTest.컬럼매핑테스트&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.EntityColumnMappingTest.컬럼매핑테스트" />
+        <item itemvalue="Gradle.EntityAutoDDLTest.테이블자동생성테스트" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.189" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.189" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a1888d35-ce8b-43db-ab5b-0539f3725095" name="Changes" comment="" />
+      <created>1749018175297</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749018175297</updated>
+      <workItem from="1749018176401" duration="4642000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
