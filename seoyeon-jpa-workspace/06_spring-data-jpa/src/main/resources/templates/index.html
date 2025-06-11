@@ -7,6 +7,9 @@
 <body>
 
   <a th:href="@{/menu/7}">7번 메뉴 상세 조회</a> <br> <!-- /menu/detail.html 로 이동 -->
-  <a th:href="@{/menu/list}">메뉴리스트 조회</a>
+  <a th:href="@{/menu/list}">메뉴리스트 조회</a> <br>
+
+  <a th:href="@{menu/regist}">메뉴 등록하기</a>
+  <a th:href="@{/menu/modify(code=7)}">7번 메뉴 수정하기</a>
 </body>
 </html>

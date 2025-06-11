@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h2>신규 메뉴 등록</h2>
+
+    <form action="">
+        메뉴명: <input type="text" name="menuName"> <br>
+        메뉴가격: <input type="number" name="menuPrice"> <br>
+        카테고리:
+        <select name="categoryCode" id="category">
+            <!-- 카테고리 목록 데이터 -->
+        </select> <br>
+        판매상태:
+        <select name="orderbleStatus">
+            <option value="Y">판매가능</option>
+            <option value="N">판매불가</option>
+        </select>
+        <button type="submit">전송</button>
+    </form>
+
+    <script>
+        // 현재 페이지 상에 필요한 카테고리 목록 조회(비동기)
+        fetch('[[@{/menu/categories}]]')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);  // [{}, {}, {}, .. ]
+
+                const $categorySelect = document.getElementById('category');
+
+                data.forEach(category => { // category.categoryCode, category.categoryName
+                   const $option = document.createElement('option');  // <option></option>
+                    $option.textContent = category.categoryName;      // <option>카테고리명</option>
+                    $option.value = category.categoryCode;            // <option value="카테고리번호">카테고리명</option>
+                    $categorySelect.appendChild($option);
+                })
+            })
+    </script>
+
+
+</body>
+</html>

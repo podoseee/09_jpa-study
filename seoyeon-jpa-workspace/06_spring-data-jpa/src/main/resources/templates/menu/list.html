@@ -2,31 +2,56 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Menu List</title>
 </head>
 <body>
 
-    <table border="1">
-        <thead>
-            <tr>
-                <th>메뉴번호</th>
-                <th>메뉴이름</th>
-                <th>메뉴가격</th>
-                <th>카테고리코드</th>
-                <th>판매상태</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr th:each="menu : ${menuList}"
-                th:object="${menu}">
-                <td th:text="*{menuCode}"></td>
-                <td th:text="*{menuName}"></td>
-                <td th:text="*{menuPrice}"></td>
-                <td th:text="*{categoryCode}"></td>
-                <td th:text="*{orderableStatus}"></td>
-            </tr>
-        </tbody>
-    </table>
+<!-- 카테고리 드롭다운 -->
+<form method="get" action="/menu/list">
+    <label for="category">카테고리:</label>
+    <select id="category" name="categoryCode">
+        <option value="">전체</option>
+        <option th:each="category : ${categoryList}"
+                th:value="${category.categoryCode}"
+                th:text="${category.categoryName}">
+        </option>
+    </select>
+    <button type="submit">검색</button>
+</form>
+
+<!-- 메뉴 목록 테이블 -->
+<table border="1">
+    <thead>
+    <tr>
+        <th>메뉴번호</th>
+        <th>메뉴이름</th>
+        <th>메뉴가격</th>
+        <th>카테고리코드</th>
+        <th>판매상태</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="menu : ${menuList}" th:object="${menu}">
+        <td th:text="*{menuCode}"></td>
+        <td th:text="*{menuName}"></td>
+        <td th:text="*{menuPrice}"></td>
+        <td th:text="*{categoryCode}"></td>
+        <td th:text="*{orderableStatus}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<div>
+    <button th:onclick="|location.href='@{/menu/list(page=${page-1})}';|" th:disabled="${isFirst}">이전</button>
+
+    <button th:each="p : ${#numbers.sequence(beginPage, endPage)}"
+            th:text="${p}"
+            th:onclick="|location.href='@{/menu/list(page=${p})}';|"
+            th:disabled="${p == page}">
+    </button>
+
+    <button th:onclick="|location.href='@{/menu/list(page=${page+1})}';|" th:disabled="${isLast}">다음</button>
+</div>
 
 </body>
 </html>
