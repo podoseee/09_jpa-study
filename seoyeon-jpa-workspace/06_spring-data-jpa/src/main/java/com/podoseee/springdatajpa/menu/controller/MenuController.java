@@ -13,6 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -116,4 +117,35 @@ public class MenuController {
         menuService.removeMenu(code);
         return "redirect:/menu/list";
     }
+
+    @GetMapping("/search")
+    public String searchMenu(@RequestParam(required = false) String type,
+                             @RequestParam(required = false) String query,
+                             Model model) {
+
+        List<MenuDto> menuList = new ArrayList<>();
+
+        try {
+            if ("price".equals(type)) {
+                if (query == null || query.isBlank()) {
+                    model.addAttribute("error", "가격을 입력해주세요.");
+                    return "menu/errorPage";
+                }
+
+                menuList = menuService.findMenuByMenuPrice(Integer.parseInt(query));
+                model.addAttribute("menuList", menuList);
+                return "menu/list";
+
+            } else if ("name".equals(type)) {
+                // 이름 검색 로직 나중에 추가
+            }
+
+        } catch (NumberFormatException e) {
+            model.addAttribute("error", "올바른 숫자를 입력해주세요.");
+            return "menu/errorPage";
+        }
+
+        return "redirect:/menu/list";
+    }
+
 }

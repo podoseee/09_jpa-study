@@ -128,6 +128,43 @@ public class MenuService {
         Menu menu = menuRepository.findById(code)
                                   .orElseThrow(() -> new IllegalArgumentException("잘못된 메뉴 번호입니다."));
 
+        menuRepository.delete(menu);
+    }
+
+    public List<MenuDto> findMenuByMenuPrice(int price){
+
+        // 전달된 가격값과 일치하는 메뉴 조회 (WHERE menu_price = xxx)
+        // * Native Query + 파라미터 바인딩
+
+        //  * 쿼리메소드
+        List<Menu> menuList
+                //= menuRepository.findByMenuPriceEquals(price);
+                //= menuRepository.findByMenuPriceGreaterThanEqual(price);
+                //= menuRepository.findByMenuPriceGreaterThanEqual(price, Sort.by("menuPrice").descending());
+                = menuRepository.findByMenuPriceGreaterThanEqualOrderByMenuPriceDesc(price);
+
+        return menuList.stream()
+                       .map(menu -> modelMapper.map(menu, MenuDto.class))
+                       .toList();
+
+    }
+
+    public List<MenuDto> findMenuByMenuName(String name) {
+        // 전달된 메뉴명이 포함된 메뉴 목록 조회
+        List<Menu> menuList = menuRepository.findByMenuNameContaining(name);
+
+        return menuList.stream()
+                .map(menu -> modelMapper.map(menu, MenuDto.class))
+                .toList();
+    }
+
+    public List<MenuDto> findMenuByPriceAndName(String[] queryArr){
+        // 전달된 가격 이상 그리고 메뉴명이 포함
+        List<Menu> menuList = menuRepository.findByMenuPriceGreaterThanEqualAndMenuNameContaining(Integer.parseInt(queryArr[0]), queryArr[1]);
+
+        return menuList.stream()
+                .map(menu -> modelMapper.map(menu, MenuDto.class))
+                .toList();
     }
 
 }
